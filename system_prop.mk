@@ -22,7 +22,4 @@ ro.product.brand=OPPO
 ro.product.name=CPH1861
 ro.product.device=CPH1861
 ro.build.product=CPH1861
-ro.secure=0
-ro.adb.secure=0
 ro.treble.enabled=true
-

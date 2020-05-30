@@ -1,8 +1,8 @@
 
 ro.product.first_api_level=27
-ro.vendor.build.date=Sat Feb 15 08:16:42 CST 2020
-ro.vendor.build.date.utc=1581725802
-ro.vendor.build.security_patch=2020-02-05
+ro.vendor.build.date=Sat May 9 06:05:12 CST 2020
+ro.vendor.build.date.utc=1588975512
+ro.vendor.build.security_patch=2020-05-05
 ro.vendor.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist32=armeabi-v7a,armeabi
 ro.vendor.product.cpu.abilist64=arm64-v8a
