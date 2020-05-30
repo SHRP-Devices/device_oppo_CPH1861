@@ -34,7 +34,6 @@ on fs
 
     write /sys/devices/platform/odm/odm:oppo_charger/power_supply/usb/otg_switch 1
     export ANDROID_ROOT /system_root
-    install_keyring
 
 on init
 
@@ -65,13 +64,6 @@ service keystore_auth /sbin/keystore_auth
     oneshot
     user system
     group root
-    disabled
-    seclabel u:r:recovery:s0
-
-# keystore is started and stopped on demand by TWRP
-service keystore /sbin/keystore /tmp/misc/keystore
-    user root
-    group root drmrpc readproc
     disabled
     seclabel u:r:recovery:s0
 

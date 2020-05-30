@@ -21,7 +21,6 @@ Now a file has been created and you have include various trees for building. roo
 <manifest>
 
   <project name="buddi56/android_device_oppo_CPH1859" path="device/oppo/CPH1859" remote="github" revision="master" />
-  ###<project name="buddi56/android_kernel_oppo_CPH1859" path="kernel/oppo/CPH1859" remote="github" revision="master" />###
 
 </manifest>
 
