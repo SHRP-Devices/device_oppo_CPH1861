@@ -169,19 +169,19 @@ TARGET_USES_LOGD := true
 #SHRP Device Specific Properties
 
 # Path of your SHRP Tree
-SHRP_PATH := device/oppo/CPH1859
+SHRP_PATH := device/oppo/CPH1861
 
 # Maintainer name *
 SHRP_MAINTAINER := blacklytning
 
 # Device codename *
-SHRP_DEVICE_CODE := CPH1859
+SHRP_DEVICE_CODE := CPH1861
 
 # Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
 SHRP_REC_TYPE := Normal
 
 # Recovery Type (It can be A/B or A_only) [Only for About Section] *
-SHRP_DEVICE_TYPE := A_Only
+SHRP_DEVICE_TYPE := A/B
 
 SHRP_EXPRESS := true
 SHRP_DARK := true
