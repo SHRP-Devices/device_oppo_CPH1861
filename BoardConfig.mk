@@ -190,3 +190,4 @@ SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
+SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
