@@ -178,10 +178,10 @@ SHRP_MAINTAINER := blacklytning
 SHRP_DEVICE_CODE := CPH1861
 
 # Recovery Type (It can be treble,normal,SAR) [Only for About Section] *
-SHRP_REC_TYPE := Normal
+SHRP_REC_TYPE := Treble
 
 # Recovery Type (It can be A/B or A_only) [Only for About Section] *
-SHRP_DEVICE_TYPE := A/B
+SHRP_DEVICE_TYPE := A_only
 
 SHRP_EXPRESS := true
 SHRP_DARK := true
@@ -190,4 +190,3 @@ SHRP_EXTERNAL := /external_sd
 SHRP_INTERNAL := /sdcard
 SHRP_OTG := /usb_otg
 SHRP_FLASH := 1
-SHRP_AB := true
