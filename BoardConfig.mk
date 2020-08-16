@@ -172,7 +172,7 @@ TARGET_USES_LOGD := true
 SHRP_PATH := device/oppo/CPH1861
 
 # Maintainer name *
-SHRP_MAINTAINER := Pro Noob
+SHRP_MAINTAINER := ProNoob
 
 #Official
 SHRP_OFFICIAL=true
