@@ -81,10 +81,10 @@ on property:ro.crypto.state=unencrypted
     write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (unencrypted)"
 
 # Normal mode, FBE
-on property:ro.crypto.type=file
-    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FBE encrypted)"
-    mkdir /data/vendor/mcRegistry 0775 system system
-    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FBE encrypted)"
+#on property:ro.crypto.type=file
+#    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry ++ (FBE encrypted)"
+#    mkdir /data/vendor/mcRegistry 0775 system system
+#    write /proc/bootprof "MOBICORE: create /data/vendor/mcRegistry -- (FBE encrypted)"
 
 # Normal mode, FDE
 on property:ro.crypto.type=block
