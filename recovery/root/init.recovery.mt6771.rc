@@ -7,7 +7,6 @@ on fs
 
 on init
     start hwservicemanager
-    resetprop "ro.crypto.type" "block"
     setprop crypto.ready 1
 
 service hwservicemanager /sbin/hwservicemanager
@@ -36,13 +35,6 @@ service keystore /sbin/keystore /tmp/misc/keystore
     disabled
     seclabel u:r:recovery:s0
 
-#Add for OPPO FBE
-service hal_cryptoeng_oppo /sbin/vendor.oppo.hardware.cryptoeng@1.0-service
-    user root
-    group root drmrpc sdcard_rw sdcard_r
-    disabled
-    seclabel u:r:recovery:s0
-
 service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service
     user root
     group root drmrpc
@@ -56,13 +48,11 @@ service gatekeeper-1-0 /sbin/android.hardware.gatekeeper@1.0-service
     seclabel u:r:recovery:s0
 
 on property:hwservicemanager.ready=true
-    start hal_cryptoeng_oppo
     start keymaster-3-0
     start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
     stop mobicore
-    stop hal_cryptoeng_oppo
     stop keymaster-3-0
     stop gatekeeper-1-0
     stop servicemanager
@@ -70,7 +60,6 @@ on property:ro.crypto.state=unsupported
 
 on property:ro.crypto.state=unencrypted
     stop mobicore
-    stop hal_cryptoeng_oppo
     stop keymaster-3-0
     stop gatekeeper-1-0
     stop servicemanager
@@ -78,7 +67,6 @@ on property:ro.crypto.state=unencrypted
 
 on property:twrp.decrypt.done=true && property:twrp.all.users.decrypted=true
     stop mobicore
-    stop hal_cryptoeng_oppo
     stop keymaster-3-0
     stop gatekeeper-1-0
     stop servicemanager
